@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Three business models and Khan Academy</title>
+<style>
+:root{
+  --dark:#BF133D; --bright:#14BF96; --bg:#FAFAF7; --text:#1A1A1A;
+  --font:ui-rounded,"SF Pro Rounded","Nunito","Varela Round","Trebuchet MS",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:1.0625rem;line-height:1.6;overflow-x:hidden}
+.page{max-width:800px;margin:0 auto;padding:clamp(1.5rem,6vw,4rem) clamp(1.1rem,5vw,2rem) clamp(3rem,8vw,6rem)}
+h1,h2{color:var(--dark);font-weight:800;line-height:1.1;margin:0}
+h1{font-size:clamp(2.2rem,8vw,3.5rem);letter-spacing:-.02em;margin-bottom:1.5rem}
+h2{font-size:clamp(1.8rem,6vw,2.6rem);letter-spacing:-.01em}
+p{margin:0}
+.cap{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.6rem;color:var(--text)}
+.chip{display:inline-block;background:var(--bright);color:var(--text);font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .75rem;border-radius:999px;margin-bottom:.7rem}
+
+.intro{background:var(--dark);color:var(--bg);border-radius:28px;padding:clamp(1.5rem,5vw,2.5rem)}
+.intro .cap{color:var(--bg)}
+.intro p.big{font-size:clamp(1.25rem,3.6vw,1.6rem);font-weight:700;line-height:1.35}
+.intro .free{display:inline-block;margin-top:1.25rem;background:var(--bright);color:var(--text);font-weight:800;padding:.6rem 1rem;border-radius:16px}
+
+.key{margin:2rem 0 0;display:grid;gap:.75rem;grid-template-columns:1fr 1fr}
+.key div{border-radius:18px;padding:1rem 1.1rem;font-size:.95rem}
+.key .k-fact{background:var(--dark);color:var(--bg)}
+.key .k-op{border:2px dashed var(--dark);background:var(--bg)}
+.key b{display:block;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.2rem}
+
+.model{margin-top:clamp(2.5rem,7vw,4.5rem);padding-top:clamp(2.5rem,7vw,4.5rem);border-top:1px solid var(--dark)}
+.head{display:flex;align-items:center;gap:1rem;margin-bottom:1.75rem}
+.num{flex:none;width:3.6rem;height:3.6rem;border-radius:50%;background:var(--bright);color:var(--text);font-size:2rem;font-weight:800;display:flex;align-items:center;justify-content:center}
+.blocks{display:grid;gap:1rem}
+.block{border-radius:22px;padding:clamp(1.1rem,4vw,1.6rem)}
+.block.plain{background:#fff;border:2px solid var(--bright)}
+.block.fact{background:var(--dark);color:var(--bg)}
+.block.fact .cap{color:var(--bg)}
+.block.fact .deal{font-size:1.4rem;font-weight:800;line-height:1.25}
+.block.fact .note{margin-top:.6rem;font-size:.95rem}
+.block.opinion{background:var(--bg);border:2px dashed var(--dark)}
+.block.opinion p.t{font-size:1.05rem}
+
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--dark);font-size:.95rem}
+
+@media (max-width:40rem){
+  .key{grid-template-columns:1fr}
+  body{font-size:1rem}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+<h1>Three business models, and what each could mean for Khan Academy</h1>
+
+<section class="intro" aria-labelledby="ka">
+  <span class="cap" id="ka">What Khan Academy is</span>
+  <p class="big">Khan Academy is a place where learners around the world study math and explore new subjects.</p>
+  <p class="free">Its content library and learning platform stay free.</p>
+</section>
+
+<div class="key" aria-label="How to read this page">
+  <div class="k-fact"><b>Solid dark panel</b>The real deal each model is based on.</div>
+  <div class="k-op"><b>Dashed outline</b>My own read. These are my opinions.</div>
+</div>
+
+<section class="model" aria-labelledby="m1">
+  <div class="head"><span class="num" aria-hidden="true">1</span><h2 id="m1">Content sponsorship</h2></div>
+  <div class="blocks">
+    <div class="block plain">
+      <span class="cap">The model</span>
+      <p>A partner pays for a whole course, and the course carries its name.</p>
+    </div>
+    <div class="block fact">
+      <span class="chip">Real deal</span><br>
+      <span class="cap">The real deal behind it</span>
+      <p class="deal">Walmart and Khan Academy</p>
+      <p class="note">No figure or date was given for this deal.</p>
+    </div>
+    <div class="block opinion">
+      <span class="chip">My own read</span><br>
+      <span class="cap">What Khan Academy would get out of it</span>
+      <p class="t">Khan Academy could build special courses, reach more learners, and do more good for education without relying only on donations (philanthropy).</p>
+    </div>
+    <div class="block opinion">
+      <span class="chip">My own read</span><br>
+      <span class="cap">What could go wrong</span>
+      <p class="t">Students, teachers, and parents might wonder if the course cares more about good teaching or about promoting the company's brand.</p>
+    </div>
+  </div>
+</section>
+
+<section class="model" aria-labelledby="m2">
+  <div class="head"><span class="num" aria-hidden="true">2</span><h2 id="m2">The Coursera model</h2></div>
+  <div class="blocks">
+    <div class="block plain">
+      <span class="cap">The model</span>
+      <p>A person learns for free, and an organization pays for the records.</p>
+    </div>
+    <div class="block fact">
+      <span class="chip">Real deal</span><br>
+      <span class="cap">The real deal behind it</span>
+      <p class="deal">The Coursera Enterprise segment</p>
+      <p class="note">No figure or date was given for this deal.</p>
+    </div>
+    <div class="block opinion">
+      <span class="chip">My own read</span><br>
+      <span class="cap">What Khan Academy would get out of it</span>
+      <p class="t">Khan Academy could earn money from organizations that benefit from its platform, instead of charging students directly.</p>
+    </div>
+    <div class="block opinion">
+      <span class="chip">My own read</span><br>
+      <span class="cap">What could go wrong</span>
+      <p class="t">Donors, teachers, and learners might wonder if Khan Academy still wants education to be truly free.</p>
+    </div>
+  </div>
+</section>
+
+<section class="model" aria-labelledby="m3">
+  <div class="head"><span class="num" aria-hidden="true">3</span><h2 id="m3">The Duolingo model</h2></div>
+  <div class="blocks">
+    <div class="block plain">
+      <span class="cap">The model</span>
+      <p>Start free, then pay to keep going once the free version slows you down.</p>
+    </div>
+    <div class="block fact">
+      <span class="chip">Real deal</span><br>
+      <span class="cap">The real deal behind it</span>
+      <p class="deal">Duolingo subscriptions</p>
+      <p class="note">No figure or date was given for this deal.</p>
+    </div>
+    <div class="block opinion">
+      <span class="chip">My own read</span><br>
+      <span class="cap">What Khan Academy would get out of it</span>
+      <p class="t">Khan Academy could put steady money into building courses, technology, and new ideas for teaching.</p>
+    </div>
+    <div class="block opinion">
+      <span class="chip">My own read</span><br>
+      <span class="cap">What could go wrong</span>
+      <p class="t">Students who cannot afford to pay could get a worse learning experience. That goes directly against Khan Academy's mission.</p>
+    </div>
+  </div>
+</section>
+
+<footer>Solid dark panels are the real deals. Dashed panels are my own read.</footer>
+
+</main>
+</body>
+</html>
